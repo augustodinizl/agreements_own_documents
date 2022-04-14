@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class purchase_own_documents(models.Model):
-#     _name = 'purchase_own_documents.purchase_own_documents'
-#     _description = 'purchase_own_documents.purchase_own_documents'
+# class agreement_own_documents(models.Model):
+#     _name = 'agreement_own_documents.agreement_own_documents'
+#     _description = 'agreement_own_documents.agreement_own_documents'
 
 #     name = fields.Char()
 #     value = fields.Integer()

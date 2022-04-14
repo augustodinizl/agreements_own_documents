@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
 <!--
-    <record model="ir.ui.view" id="purchase_own_documents.list">
-      <field name="name">purchase_own_documents list</field>
-      <field name="model">purchase_own_documents.purchase_own_documents</field>
+    <record model="ir.ui.view" id="agreement_own_documents.list">
+      <field name="name">agreement_own_documents list</field>
+      <field name="model">agreement_own_documents.agreement_own_documents</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -17,18 +17,18 @@
 
     <!-- actions opening views on models -->
 <!--
-    <record model="ir.actions.act_window" id="purchase_own_documents.action_window">
-      <field name="name">purchase_own_documents window</field>
-      <field name="res_model">purchase_own_documents.purchase_own_documents</field>
+    <record model="ir.actions.act_window" id="agreement_own_documents.action_window">
+      <field name="name">agreement_own_documents window</field>
+      <field name="res_model">agreement_own_documents.agreement_own_documents</field>
       <field name="view_mode">tree,form</field>
     </record>
 -->
 
     <!-- server action to the one above -->
 <!--
-    <record model="ir.actions.server" id="purchase_own_documents.action_server">
-      <field name="name">purchase_own_documents server</field>
-      <field name="model_id" ref="model_purchase_own_documents_purchase_own_documents"/>
+    <record model="ir.actions.server" id="agreement_own_documents.action_server">
+      <field name="name">agreement_own_documents server</field>
+      <field name="model_id" ref="model_agreement_own_documents_agreement_own_documents"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -42,19 +42,19 @@
 
     <!-- Top menu item -->
 <!--
-    <menuitem name="purchase_own_documents" id="purchase_own_documents.menu_root"/>
+    <menuitem name="agreement_own_documents" id="agreement_own_documents.menu_root"/>
 -->
     <!-- menu categories -->
 <!--
-    <menuitem name="Menu 1" id="purchase_own_documents.menu_1" parent="purchase_own_documents.menu_root"/>
-    <menuitem name="Menu 2" id="purchase_own_documents.menu_2" parent="purchase_own_documents.menu_root"/>
+    <menuitem name="Menu 1" id="agreement_own_documents.menu_1" parent="agreement_own_documents.menu_root"/>
+    <menuitem name="Menu 2" id="agreement_own_documents.menu_2" parent="agreement_own_documents.menu_root"/>
 -->
     <!-- actions -->
 <!--
-    <menuitem name="List" id="purchase_own_documents.menu_1_list" parent="purchase_own_documents.menu_1"
-              action="purchase_own_documents.action_window"/>
-    <menuitem name="Server to list" id="purchase_own_documents" parent="purchase_own_documents.menu_2"
-              action="purchase_own_documents.action_server"/>
+    <menuitem name="List" id="agreement_own_documents.menu_1_list" parent="agreement_own_documents.menu_1"
+              action="agreement_own_documents.action_window"/>
+    <menuitem name="Server to list" id="agreement_own_documents" parent="agreement_own_documents.menu_2"
+              action="agreement_own_documents.action_server"/>
 -->
   </data>
 </odoo>
